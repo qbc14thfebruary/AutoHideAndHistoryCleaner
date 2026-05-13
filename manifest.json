@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Hide & History Cleaner",
+  "version": "1.3",
+  "description": "Tự động ẩn phần tử web, xóa lịch sử và đóng tab quảng cáo theo yêu cầu.",
+  "permissions": [
+    "browsingData",
+    "history",
+    "storage",
+    "tabs"
+  ],
+  "icons": {
+    "16": "icons/power-washing16.png",
+    "32": "icons/power-washing32.png",
+    "64": "icons/power-washing64.png",
+    "128": "icons/power-washing128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icons/power-washing16.png",
+      "32": "icons/power-washing32.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Auto Hide & History Cleaner"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["content.js"]
+    }
+  ]
+}
