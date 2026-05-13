@@ -2,47 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { width: 320px; font-family: sans-serif; font-size: 13px; color: #222; }
-
-    .hdr { padding: 11px 14px; border-bottom: 1px solid #eee; display: flex; align-items: center; justify-content: space-between; }
-    .hdr-title { font-weight: 600; font-size: 13px; }
-    .tog-wrap { display: flex; align-items: center; gap: 7px; }
-    .tog { width: 36px; height: 20px; background: #2196F3; border-radius: 10px; position: relative; cursor: pointer; flex-shrink: 0; }
-    .tog::after { content: ''; position: absolute; width: 16px; height: 16px; background: white; border-radius: 50%; top: 2px; left: 18px; transition: left .2s; }
-    .tog.off { background: #ccc; }
-    .tog.off::after { left: 2px; }
-    #togLbl { font-size: 12px; color: #888; min-width: 55px; }
-
-    .sec { padding: 9px 14px; border-bottom: 1px solid #eee; }
-    .sec-lbl { font-size: 10px; font-weight: 700; color: #888; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 7px; }
-    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 7px; min-height: 22px; }
-    .tag { display: inline-flex; align-items: center; gap: 3px; padding: 2px 8px; border-radius: 99px; font-size: 11px; border: 1px solid; }
-    .tag.domain { background: #E6F1FB; color: #0C447C; border-color: #85B7EB; }
-    .tag.kw     { background: #FAEEDA; color: #633806; border-color: #EF9F27; }
-    .tag.ad     { background: #FCEBEB; color: #791F1F; border-color: #F09595; }
-    .tag.cls    { background: #EAF3DE; color: #27500A; border-color: #97C459; }
-    .tag.id     { background: #EEEDFE; color: #3C3489; border-color: #AFA9EC; }
-    .tag.tag-el { background: #F1EFE8; color: #444441; border-color: #B4B2A9; }
-    .del { cursor: pointer; opacity: .5; font-size: 14px; line-height: 1; }
-    .del:hover { opacity: 1; }
-
-    .irow { display: flex; gap: 5px; }
-    .irow select, .irow input, .irow button { padding: 4px 8px; font-size: 12px; border: 1px solid #ccc; border-radius: 6px; background: white; color: #222; }
-    .irow input { flex: 1; min-width: 0; outline: none; }
-    .irow input:focus { border-color: #2196F3; }
-    .irow button { cursor: pointer; white-space: nowrap; }
-    .irow button:hover { background: #f5f5f5; }
-    .hint { font-size: 10px; color: #bbb; margin-top: 4px; }
-
-    .foot { padding: 10px 14px; display: flex; gap: 7px; }
-    .btn-save { flex: 1; padding: 7px; font-size: 13px; background: #2196F3; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
-    .btn-save:hover { background: #1976D2; }
-    .btn-rst { padding: 7px 12px; font-size: 13px; background: transparent; color: #888; border: 1px solid #ccc; border-radius: 6px; cursor: pointer; }
-    .btn-rst:hover { background: #ab5555; color: #fff;font-weight: bolder;}
-    .footer-copyright { display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; color: #444; font-size: 11px;}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -114,7 +74,7 @@
 
   <hr style="border: 0.5px solid #eee; margin: 15px 0;">
   <div class="footer-copyright">
-      © 2026 Bui Cong Quynh - Logo by Flaticon
+      © 2026 Bui Cong Quynh <br> © Carpet icons created by Freepik - Flaticon
   </div>
 
   <script src="popup.js"></script>
